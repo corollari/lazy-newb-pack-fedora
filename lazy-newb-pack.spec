@@ -1,4 +1,9 @@
+# Prevent failure of rpmbuild when mangling shebangs (not entirely sure why the script fails but I believe it's linked to some packaged files having spaces in their filenames, there's an unfixed filezilla bug on that)
 %undefine __brp_mangle_shebangs
+# Applied to prevent rpmbuild from stripping parts of the PyLNP executable, causing it to fail
+# See https://mattsumme.rs/2015/rpmbuild-and-pyinstaller/
+%define __os_install_post %{nil}
+%define debug_package %{nil}
 
 Name:           lazy-newb-pack
 Version:        0.1
