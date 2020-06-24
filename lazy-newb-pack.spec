@@ -17,7 +17,7 @@ Patch0:         PyLNP.patch
 BuildArch:      x86_64
 
 #BuildRequires:  
-Requires:       SDL, SDL_image, SDL_ttf, gtk2-devel, openal-soft, alsa-lib, alsa-plugins-pulseaudio, mesa-dri-drivers, python, gnome-terminal, mono-devel, gtk-sharp2
+Requires:       SDL, SDL_image, SDL_ttf, gtk2-devel, openal-soft, alsa-lib, alsa-plugins-pulseaudio, mesa-dri-drivers, python, gnome-terminal, mono-devel, gtk-sharp2, compat-openssl10-devel
 
 %description
 A ready-to-go rpm package of Enay's Lazy Newb Pack for Dward Fortress
